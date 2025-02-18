@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="https://kit.fontawesome.com/f1c5c5c132.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo" alt="logo" width = "30 px" height = "30 px">
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Data Analyst</p>
+                <h1>Hi, I am <span>Nisha Reddy Teegala</span><br>from Hyderabad</h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/about1.jpg" alt="about" width="450px" height="450px">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I am Nisha Reddy Teegala, a B.Tech student in Electronics and Computer Engineering with expertise in data analysis,
+                            visualization, and SQL database optimization. Skilled in Python, SQL, Power BI, and Advanced Excel, I excel in uncovering
+                            insights to drive decisions. I also actively engage in volunteer work and enjoy sports and music.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Virtual Experience')">Virtual Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab1" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Python (Pandas, NumPy, Scipy, Matplotlib, Seaborn)</li>
+                                <li><span>Data Manipulation & Analytics</span><br>Excel (Pivot Tables,VLOOKUP), Statistical Modeling</li>
+                                <li><span>Query Language</span><br>SQL (joins, indexing, query optimization)</li>
+                                <li><span>Data Visualization</span><br>Power BI, Tableau, SAC</li>
+                                <li><span>Database Management</span><br>MySQL & SQL Server</li>
+                                <li><span>Machine Learning</span><br>Model Development and Evaluation</li>
+                                <li><span>BI tools</span><br>Proficient in JIRA Agile & Confluence</li>
+                                <li><span>Data Processing</span><br>ETL, Data PipeliEnes, Batch & Streaming Processing</li>
+                                <li><span>Cloud Computing</span><br>AWS & Azure Fundamentals, Data Engineering</li>
+                                <li><span>Big Data Analytics</span><br>Basic knowledge of Spark & &Hadoop</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Virtual Experience">
+                            <ul>
+                                <li><span>IBM</span><br>Data Visualization using Python</li>
+                                <li><span>Tata Consultancy Services</span><br>Master Data Management</li>
+                                <li><span>Google for Developers</span><br>Artificial Intelligence & Machine Learning</li>
+                                <li><span>Amazon Web Service</span><br>AWS Academy Graduate - AWS Academy Data Engineering</li>
+                                <li><span>Amazon Web Service</span><br>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
+                        
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.Tech</span><br>SNIST ECM 2021-2025<br>CGPA-8.6</li>
+                                <li><span>Intermediate</span><br>Narayana Junior College<br>GRADE-97%</li>
+                                <li><span>School</span><br>VHS<br>GPA-9.5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="conatiner">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Data Field Jobs Dashboard | Power BI</h2>
+                    <p>Designed an interactive Power BI dashboard to analyze job trends, including availability, salary insights, top employers, and in-demand skills.</p>
+                    <p>Leveraged real-time visualizations to assist job seekers and recruiters in data-driven decision-making.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>California Wildfire Damage Data Visualization | Python </h2>
+                    <p>Analyzed wildfire data using Python in Jupyter Notebook, utilizing Pandas, Matplotlib, Seaborn, and Plotly for comprehensive insights.</p>
+                    <p>Developed interactive visualizations to identify correlations between climate conditions and wildfire severity.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Autism Detection | Machine Learning</h2>
+                    <p>Built a machine learning model to predict Autism Spectrum Disorder (ASD) using behavioral data.</p>
+                    <p>Used Scikit-learn and TensorFlow for data preprocessing and model training, achieving 85% accuracy with optimized classification models.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Netflix Dashboard | Power BI</h2>
+                    <p>Created an interactive Power BI dashboard to analyze Netflix’s movie and TV show trends.</p>
+                    <p>Visualized content distribution, genre popularity, and user engagement using interactive filters.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class=""container>
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ds.jpeg" alt="" width="250 px" height="250 px">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app coonects you talented people around the world.
+                            Download it from playStore</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Data Analytics.jpg" alt="" width="200 px" height="200 px">
+                </div>
+                <div class="work">
+                    <img src="images/data visualization.jpg" alt="" width="250 px" height="250 px" >
+                </div>
+            </div>
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>nishareddyteegala@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>9391102846</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/nisha-reddy-teegala"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/NISHAREDDY-1221"><i class="fa-brands fa-github"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <a href="https://1drv.ms/b/c/cc451c8ed9fb9c2d/EWqgIlGM2B1KjeYZcKkvV1wBYlkhMJ7J6D7_8BsiUIx1tw?e=xdssWm" class="btn btn2" align = "bottom-center"  font-size="50 px">Download CV</a>
+                        </div>
+                        
+    
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> nisha@1221</p>
+
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab1");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab1");
+    }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>  
+    
+</body>
+</html>
